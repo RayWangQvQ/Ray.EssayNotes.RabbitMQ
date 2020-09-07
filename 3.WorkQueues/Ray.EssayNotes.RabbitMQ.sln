@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ray.EssayNotes.RabbitMQ.NewTask", "Ray.EssayNotes.RabbitMQ.NewTask\Ray.EssayNotes.RabbitMQ.NewTask.csproj", "{AC3FD56C-A5AA-4417-9C2F-070A44AD31C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ray.EssayNotes.RabbitMQ.NewTask", "Ray.EssayNotes.RabbitMQ.NewTask\Ray.EssayNotes.RabbitMQ.NewTask.csproj", "{AC3FD56C-A5AA-4417-9C2F-070A44AD31C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ray.EssayNotes.RabbitMQ.Worker", "Ray.EssayNotes.RabbitMQ.Worker\Ray.EssayNotes.RabbitMQ.Worker.csproj", "{4B9AD880-7ECB-45EA-8DD7-C89BD774FF91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ray.EssayNotes.RabbitMQ.Worker", "Ray.EssayNotes.RabbitMQ.Worker\Ray.EssayNotes.RabbitMQ.Worker.csproj", "{4B9AD880-7ECB-45EA-8DD7-C89BD774FF91}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ray.Infrastructure", "..\0.Shared\Ray.Infrastructure\Ray.Infrastructure.csproj", "{628D0B3C-E384-460D-A7F6-0DB2CC14AEEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4B9AD880-7ECB-45EA-8DD7-C89BD774FF91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B9AD880-7ECB-45EA-8DD7-C89BD774FF91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B9AD880-7ECB-45EA-8DD7-C89BD774FF91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{628D0B3C-E384-460D-A7F6-0DB2CC14AEEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628D0B3C-E384-460D-A7F6-0DB2CC14AEEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628D0B3C-E384-460D-A7F6-0DB2CC14AEEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628D0B3C-E384-460D-A7F6-0DB2CC14AEEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

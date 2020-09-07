@@ -32,7 +32,7 @@ namespace Ray.EssayNotes.RabbitMQ.Receiver
             var consumer = new EventingBasicConsumer(channel);
             consumer.Received += Consumer_Received;
             channel.BasicConsume(queue: "hello",
-                                     autoAck: true,
+                                     autoAck: true,//acknowledgment，是否自动确认已被消费，设置为true时，RabbitMQ发送完消息后就立即将队列中的消息设置为已被消费（在3.workqueue中具体测试）
                                      consumer: consumer);
         }
 
