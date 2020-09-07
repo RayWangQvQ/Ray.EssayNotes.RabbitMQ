@@ -9,4 +9,8 @@
     <PackageReference Include="RabbitMQ.Client" Version="6.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\0.Shared\Ray.Infrastructure\Ray.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
