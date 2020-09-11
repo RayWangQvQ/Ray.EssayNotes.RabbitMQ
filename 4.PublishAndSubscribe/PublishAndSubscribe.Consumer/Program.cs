@@ -13,13 +13,18 @@ namespace PublishAndSubscribe.Consumer
             using var connection = factory.CreateConnection();
             using var channel = connection.CreateModel();
 
-            channel.ExchangeDeclare(exchange: "logs", type: ExchangeType.Fanout);
+            //1.声明交换机
+            channel.ExchangeDeclare(exchange: "logs",
+                type: ExchangeType.Fanout);//Fanout模式会向所有队列发送
 
-            var queueName = channel.QueueDeclare().QueueName;
+            //2.声明队列
+            var queueName = channel.QueueDeclare()//这里不写任何参数，会创建一个非持久化的（non-durable）、独有的（exclusive）、自动删除的（autodelete）队列，其名称会随机自动生成，形如（amq.gen-JzTY20BRgKO-HjmUJj0wLg）
+                .QueueName;
 
+            //3.绑定（将交换机与队列绑定）
             channel.QueueBind(queue: queueName,
                 exchange: "logs",
-                routingKey: "");
+                routingKey: "");//因为Fanout是发向所有队列，所以这里不需要指定路由了
 
             Console.WriteLine(" [*] Waiting for logs.");
 
